@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+p {
+    font-family: 'Courier Prime', monospace;
+}
+.first{
+    position: relative;
+    width: 100%;
+}
+.fim{
+    width: 100%;
+    position: absolute;
+}
+.tel{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items:center;
+    margin-top: 15%;
+}
+
+.ff{
+    color: black;
+    font-size: 4vw;
+    animation: ctrl-change 1s steps(1) infinite;
+    animation-play-state: running;
+}
+@keyframes ctrl-change {
+    0% {color: black;}
+    50% {color: #006FF5;}
+}
+.star{
+    width: 20%;
+    animation: starround 6s linear infinite;
+}
+@keyframes starround {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/* ------------------------------------------ */
+    .bricks {
+    display: flex;
+    align-content: center;
+    position: relative;
+    width:200%;
+    animation: circles-move 2s linear infinite;
+    margin-left: -50%;
+    }
+    
+    @keyframes circles-move {
+        0% {left: 0%}
+        100% {left: 50%}
+    }
+
+    .brick {
+    margin-top: 1%;
+    width: 10%;
+    height: 10%;
+    position: relative;
+    }
+    
+    .brick img {
+    position: absolute;
+    width: 93%;
+    }
+    
+    .brick .active {
+    display: none;
+    }
+    
+    .brick:hover .active {
+    display: initial;
+    }
+    
+    .brick:hover .inactive {
+    display: none;
+    }
+
+
+    .bricks2 {
+        z-index: 2;
+        display: flex;
+        align-content: center;
+        position: relative;
+        margin-left: 1%;
+        width:200%;
+        animation: circles-move2 2s linear infinite;
+        margin-right: -60%;
+        margin-top: 39%;
+    }
+
+    @keyframes circles-move2 {
+        0% {right: 0%}
+        100% {right: 50%}
+    }
+    .sec{
+        position: relative;
+        margin-top: 4.2%;
+    }
+    .fon{
+        width: 100%;
+        position: relative;
+    }
+    .three{
+        position: relative;
+        display: flex;
+        margin-top: -1%;
+    }
+    .lef,.ri{
+        width: 100%;
+    }
+    .ri{
+        margin-left: -0.1%;
+    }
+    .niz{
+        width: 100%;
+        margin-top: -0.1%;
+        margin-left: -0.1%;
+    }
+
+    .swer{
+        margin-top: -15%;
+        width: 100%;
+        position: absolute;
+        animation: peredelka 2s steps(1) linear infinite;
+        animation-play-state: running;
+    }
+    .swer img{
+        position: absolute;
+        width: 100%;
+    }
+
+        @keyframes peredelka {
+            0% {}
+            25%{}
+            50%{}
+            100% {}
+        }
+        .brick .active {
+        display: none;
+        }
+        
+        .brick:hover .active {
+        display: initial;
+        }
+        
+        .brick:hover .inactive {
+        display: none;
+        }
